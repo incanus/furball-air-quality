@@ -217,25 +217,25 @@ void furball_loop() {
   char buffer[BUFFER_LENGTH + 1];
 
   if(furball_air_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.air-sensor", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_air_quality_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.air-quality-sensor", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_light_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.light-sensor", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_sound_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.sound-sensor", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_presence_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.presence-sensor", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_system_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.system", buffer);
+    homebus_publish_to("", buffer);
 
   if(furball_diagnostic_update(buffer, BUFFER_LENGTH))
-    homebus_publish_to("org.homebus.experimental.diagnostic", buffer);
+    homebus_publish_to("", buffer);
 }
 
 /* 
